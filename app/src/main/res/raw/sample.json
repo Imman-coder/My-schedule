@@ -1,0 +1,49 @@
+{
+  "last_updated":"pata nii",
+  "table": {
+    "A":[
+      [
+        {
+          "name":"SubA0 1",
+          "teacher":"Hoga koi 1",
+          "time":"9:15 - 10:10"
+        },
+        {
+          "name":"SubA0 2",
+          "teacher":"Hoga koi 2",
+          "time":"10:10 - 11:05"
+        },
+        {
+          "name":"SubA0 3",
+          "teacher":"Hoga koi 3",
+          "time":"11:05 - 12:00"
+        },
+        {
+          "name":"SubA0 4",
+          "teacher":"Hoga koi 4",
+          "time":"12:00 - 12:55"
+        },
+        {
+          "name":"SubA0 5",
+          "teacher":"Hoga koi 6",
+          "time":"12:55 - 1:45"
+        },
+        {
+          "name":"SubA0 6",
+          "teacher":"Hoga koi 6",
+          "time":"1:45 - 2:35"
+        },
+        {
+          "name":"SubA0 7",
+          "teacher":"Hoga koi 7",
+          "time":"2:35 - 3:25"
+        },
+        {
+          "name":"SubA0 8",
+          "teacher":"Hoga koi 8",
+          "time":"3:25 - 4:15"
+        }
+      ]
+    ]
+  }
+}
