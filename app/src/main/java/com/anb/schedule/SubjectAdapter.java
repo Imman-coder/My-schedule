@@ -16,7 +16,7 @@ import org.json.JSONObject;
 
 public class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter.Viewholder> {
 
-    private Context context;
+    private final Context context;
     JSONArray day;
 
     // Constructor
@@ -40,8 +40,7 @@ public class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter.Viewhold
             holder.subjectTV.setText(current_job.getString("name"));
             holder.facultynameTV.setText(current_job.getString("teacher"));
             if(current_job.getString("teacher").contains("/")) {
-                int ht_px = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 270, context.getResources().getDisplayMetrics());
-                holder.longi.getLayoutParams().height = ht_px;
+                holder.longi.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 270, context.getResources().getDisplayMetrics());
             }
 //            holder.timeTV.setText(current_job.getString("time"));
         } catch (JSONException e) {
@@ -59,7 +58,10 @@ public class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter.Viewhold
     // View holder class for initializing of
     // your views such as TextView and Imageview.
     public static class Viewholder extends RecyclerView.ViewHolder {
-        private TextView subjectTV, facultynameTV, timeTV, longi;
+        private final TextView subjectTV;
+        private final TextView facultynameTV;
+        private TextView timeTV;
+        private final TextView longi;
 
         public Viewholder(@NonNull View itemView) {
             super(itemView);
